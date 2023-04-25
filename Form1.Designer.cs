@@ -74,7 +74,7 @@ namespace PryEjemplo20_04
             // 
             // btnConvertir
             // 
-            this.btnConvertir.Location = new System.Drawing.Point(63, 236);
+            this.btnConvertir.Location = new System.Drawing.Point(65, 251);
             this.btnConvertir.Name = "btnConvertir";
             this.btnConvertir.Size = new System.Drawing.Size(75, 23);
             this.btnConvertir.TabIndex = 4;
@@ -135,7 +135,7 @@ namespace PryEjemplo20_04
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(383, 181);
+            this.btnBuscar.Location = new System.Drawing.Point(42, 168);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(75, 23);
             this.btnBuscar.TabIndex = 11;
@@ -145,16 +145,17 @@ namespace PryEjemplo20_04
             // 
             // btnReemplazar
             // 
-            this.btnReemplazar.Location = new System.Drawing.Point(147, 156);
+            this.btnReemplazar.Location = new System.Drawing.Point(146, 127);
             this.btnReemplazar.Name = "btnReemplazar";
             this.btnReemplazar.Size = new System.Drawing.Size(75, 23);
             this.btnReemplazar.TabIndex = 12;
             this.btnReemplazar.Text = "Reemplazar";
             this.btnReemplazar.UseVisualStyleBackColor = true;
+            this.btnReemplazar.Click += new System.EventHandler(this.btnReemplazar_Click);
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(476, 183);
+            this.txtBuscar.Location = new System.Drawing.Point(146, 171);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(39, 20);
             this.txtBuscar.TabIndex = 13;
@@ -164,7 +165,7 @@ namespace PryEjemplo20_04
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Location = new System.Drawing.Point(156, 241);
+            this.lblFecha.Location = new System.Drawing.Point(158, 256);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(42, 13);
             this.lblFecha.TabIndex = 14;
@@ -174,7 +175,7 @@ namespace PryEjemplo20_04
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 392);
+            this.ClientSize = new System.Drawing.Size(336, 302);
             this.Controls.Add(this.lblFecha);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.btnReemplazar);

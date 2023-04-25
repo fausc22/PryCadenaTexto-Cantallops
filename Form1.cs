@@ -40,7 +40,7 @@ namespace PryEjemplo20_04
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
-            if (textoA.IndexOf(txtA.Text) != -1)
+            if (textoA.IndexOf(txtBuscar.Text) != -1)
             {
                 txtBuscar.BackColor = Color.Green;
             }
@@ -63,7 +63,29 @@ namespace PryEjemplo20_04
 
         private void btnComparar_Click(object sender, EventArgs e)
         {
+            textoA = txtA.Text;
+            textoB= txtB.Text;
 
+            int resultado = string.Compare(textoA, textoB);
+            if (resultado == 0)
+            {
+                MessageBox.Show("El contenido de ambas cadenas es igual");
+            }
+            else
+            {
+                if (resultado < 0)
+                {
+                    MessageBox.Show("El texto B contiene mayor cantidad de caracteres");
+                }
+                else
+                {
+                    if (resultado > 0)
+                    {
+                        MessageBox.Show("El texto A contiene mayor cantidad de caracteres");
+                    }
+                }
+            }
+            
         }
 
         private void btnConvertir_Click(object sender, EventArgs e)
@@ -71,6 +93,15 @@ namespace PryEjemplo20_04
             DateTime A = dateTimePicker1.Value;
             string B = A.ToString("dd/MM/yyyy");
             lblFecha.Text = B;
+        }
+
+        private void btnReemplazar_Click(object sender, EventArgs e)
+        {
+            textoA = txtA.Text;
+            string stringB = "";
+            stringB = textoA.Replace(textoA, txtB.Text);
+            txtA.Text = stringB;
+            txtB.Clear();
         }
     }
 }
